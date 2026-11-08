@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Sinag",
+    "slug": "sinag",
+    "version": "4.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/Sinag_logo.png",
+    "scheme": "sinag",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#121212",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sinag.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/Sinag_logo.png",
+        "backgroundColor": "#0A0912"
+      },
+      "package": "com.sinag.app",
+      "googleServicesFile": "./google-services.json"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ba81509a-9530-48b8-af32-8f073db919cd"
+      }
+    }
+  }
+}
